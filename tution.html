@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Future Home Tuition</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+}
+
+/* Header */
+header{
+    background:#003366;
+    color:white;
+    padding:15px 0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:90%;
+    margin:auto;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200') no-repeat center center/cover;
+    height:90vh;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.6);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.btn{
+    display:inline-block;
+    background:#ff9900;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* Sections */
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#003366;
+}
+
+/* About */
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+/* Services */
+.services-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.service{
+    width:300px;
+    background:#f4f4f4;
+    padding:20px;
+    margin:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* Tutors */
+.tutors{
+    background:#eef5ff;
+}
+
+.tutor-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.tutor-card{
+    width:280px;
+    background:white;
+    margin:15px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.tutor-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.tutor-card h3,
+.tutor-card p{
+    padding:10px;
+    text-align:center;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:10px;
+}
+
+/* Footer */
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:35px;
+    }
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Bright Future Tuition</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tutors">Tutors</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Home Tuition Services</h1>
+        <p>Personalized Learning for Better Results</p>
+        <a href="#contact" class="btn">Book a Free Demo</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+        We provide qualified and experienced tutors for Classes 1 to 12.
+        Our goal is to help students achieve academic excellence through
+        personalized one-to-one teaching at home and online.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services-container">
+        <div class="service">
+            <h3>Home Tuition</h3>
+            <p>Expert tutors visit your home for personalized learning.</p>
+        </div>
+
+        <div class="service">
+            <h3>Online Classes</h3>
+            <p>Interactive online sessions from the comfort of your home.</p>
+        </div>
+
+        <div class="service">
+            <h3>Exam Preparation</h3>
+            <p>Special coaching for board exams and competitive tests.</p>
+        </div>
+    </div>
+</section>
+
+<section id="tutors" class="tutors">
+    <h2>Our Tutors</h2>
+
+    <div class="tutor-container">
+
+        <div class="tutor-card">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500" alt="Tutor">
+            <h3>Rahul Sharma</h3>
+            <p>Mathematics Expert</p>
+        </div>
+
+        <div class="tutor-card">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500" alt="Tutor">
+            <h3>Priya Verma</h3>
+            <p>Science Specialist</p>
+        </div>
+
+        <div class="tutor-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500" alt="Tutor">
+            <h3>Amit Kumar</h3>
+            <p>English & IELTS Trainer</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91 98765 43210</p>
+    <p>📧 Email: info@brightfuturetuition.com</p>
+    <p>📍 Address: Your City, India</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Bright Future Tuition Services. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
